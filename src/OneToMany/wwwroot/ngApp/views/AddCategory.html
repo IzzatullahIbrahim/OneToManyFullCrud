@@ -1,0 +1,14 @@
+﻿<div class="container">
+
+    <div>
+        <h3>Category Quick Add</h3>
+    </div>
+    <form ng-submit="controller.addCat()">
+        <div class="form-group">
+            <label for="brandinput">Category Name:</label>
+            <input id="brandinput" class="form-control" type="text" placeholder="Input New Category Here" ng-model="controller.cat.name" />
+        </div>
+
+        <input type="submit" value="Complete Add" class="btn btn-success" />
+    </form>
+</div>

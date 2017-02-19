@@ -1,0 +1,19 @@
+<div>
+    <h2>{{controller.category.name}}</h2>
+</div>
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Movie Title:</th>
+            <th>Director:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="m in controller.category.movies">
+            <td>{{m.title}}</td>
+            <td>{{m.director}}</td>
+            <td><button class="btn btn-warning" ui-sref="edit({id: h.id})">Edit</button></td>
+            <td><button class="btn btn-danger" ng-click="controller.deleteMovie(h.id)" /> Delete</td>
+        </tr>
+    </tbody>
+</table>
